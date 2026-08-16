@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>知识管家 · Agent 公开演示站</title>
+  <meta name="description" content="知识管家 Agent：把飞书里的文字、链接、截图、文件，自动保存、识别、分类、提炼到 Obsidian，并按日/周/月定时回推。本页为功能演示，不连接真实 Agent。" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <div class="demo-badge">演示模式 · 本页不连接真实 Agent · 提交内容不会上传</div>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="hero-badge">个人知识管理 Agent</div>
+      <h1>知识管家</h1>
+      <p class="tagline">把飞书里的碎片，自动变成你的 Obsidian 知识库</p>
+      <p class="sub">公众号链接 / 截图 / 文件 / 文字 → 保存 · 识别 · 分类 · 提炼 · 定时回推</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#demo">体验演示</a>
+        <a class="btn btn-ghost" href="#workflow">查看工作流</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="what">
+      <h2>它能做什么</h2>
+      <p class="lead">一条消息进来，六个动作自动跑完，中间不需要你碰笔记软件。</p>
+      <div class="grid">
+        <div class="card"><div class="card-ico">📥</div><h3>原样归档</h3><p>消息按天写入 Inbox，时间倒序、<code>status:inbox</code>，只增不改。</p></div>
+        <div class="card"><div class="card-ico">🔍</div><h3>内容识别</h3><p>链接抓正文、截图 OCR、文件解析，完整保留不删减。</p></div>
+        <div class="card"><div class="card-ico">🧭</div><h3>提炼脉络</h3><p>梳理主题、逻辑结构、前后关系，以及核心观点与论证思路。</p></div>
+        <div class="card"><div class="card-ico">⚡</div><h3>转行动项</h3><p>把内容落成具体可执行的下一步，无法落地则只归类、不硬造。</p></div>
+        <div class="card"><div class="card-ico">📝</div><h3>生成笔记</h3><p>按主题归集到 Seed，分类打标签，同主题合并、无则新建。</p></div>
+        <div class="card"><div class="card-ico">⏰</div><h3>定时汇总</h3><p>每天 20:00 日报、每周日 20:00 周报、每月最后一天月报。</p></div>
+      </div>
+    </section>
+
+    <section id="workflow" class="alt">
+      <h2>工作流程</h2>
+      <p class="lead">从收到消息到沉淀进知识库，共七个阶段。</p>
+      <div class="timeline">
+        <div class="step"><span class="dot">1</span><div><h4>接收并归档原始碎片</h4><p>原样保存到 📥Inbox，按自然日归档，标 <code>status:inbox</code>。</p></div></div>
+        <div class="step"><span class="dot">2</span><div><h4>解析内容为全文</h4><p>链接抓全文、截图 OCR、文件提取，完整保留不删减。</p></div></div>
+        <div class="step"><span class="dot">3</span><div><h4>提炼脉络与学习点</h4><p>产出主题 + 逻辑结构 + 前后关系，保留观点、论证、执行步骤。</p></div></div>
+        <div class="step"><span class="dot">4</span><div><h4>转行动项</h4><p>能落地就写具体动作；不能落地就只归类，不编造。</p></div></div>
+        <div class="step"><span class="dot">5</span><div><h4>判定主题归集 Seed</h4><p>按内容占比定主主题，同主题合并、无则新建，并打标签。</p></div></div>
+        <div class="step"><span class="dot">6</span><div><h4>定时汇总推送</h4><p>日报 / 周报 / 月报写入 📑Review，并推送回飞书。</p></div></div>
+        <div class="step"><span class="dot">7</span><div><h4>沉淀常青与主题地图</h4><p>符合条件的进 📚Evergreen（人工校验），📝MOC 每月更新。</p></div></div>
+      </div>
+    </section>
+
+    <section id="io">
+      <h2>输入 → 输出</h2>
+      <div class="io-grid">
+        <div class="io-box">
+          <h3>输入</h3>
+          <ul>
+            <li>💬 文字消息（飞书私聊）</li>
+            <li>🔗 公众号 / 网页链接（URL）</li>
+            <li>🖼️ 截图（图片，OCR 转文字）</li>
+            <li>📎 文件（附件，解析提取）</li>
+          </ul>
+        </div>
+        <div class="io-box">
+          <h3>输出</h3>
+          <ul>
+            <li>📥 Inbox 收件箱：原始碎片（按天）</li>
+            <li>📝 Seed 种子笔记：提炼笔记</li>
+            <li>📑 Review：日 / 周 / 月汇总报告</li>
+            <li>📚 Evergreen / 🗺️ MOC：常青与主题地图</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="bounds" class="alt">
+      <h2>能力边界</h2>
+      <p class="lead">清楚知道它做什么、不做什么，比功能本身更重要。</p>
+      <div class="bounds">
+        <div class="bound bound-yes"><h3>✅ 会做</h3><ul>
+          <li>忠实归档，原文不删减、不臆测</li>
+          <li>提炼主题、脉络、学习点、行动项</li>
+          <li>按时生成并推送日报 / 周报 / 月报</li>
+          <li>分类、打标签、同主题合并</li>
+        </ul></div>
+        <div class="bound bound-no"><h3>❌ 不做</h3><ul>
+          <li>不替你执行计划、不对外回复</li>
+          <li>不自动发布到公众号等外部平台</li>
+          <li>不直接写死 Evergreen 终稿</li>
+          <li>不删除 / 覆盖 Inbox 原始碎片</li>
+          <li>不臆测 OCR / 抓取失败的内容</li>
+        </ul></div>
+      </div>
+    </section>
+
+    <section id="samples">
+      <h2>输出样例</h2>
+      <p class="lead">以下为脱敏后的示例数据，仅用于展示输出格式。</p>
+      <div class="samples">
+        <div class="sample">
+          <div class="sample-tag">📥 Inbox 收件箱 / 2026-08-16.md</div>
+          <pre># 📥 2026-08-16 原始碎片
+&gt; 按时间倒序记录，status:inbox，只增不改。
+
+## 碎片 1：某公众号文章（链接）
+- 接收时间：2026-08-16 15:33
+- 类型：公众号链接（已抓取全文）
+- 状态：status:inbox（✓ 已成功抓取）</pre>
+        </div>
+        <div class="sample">
+          <div class="sample-tag">📝 Seed 种子笔记 / 主题-话题.md</div>
+          <pre># 主题：个人成长
+## 主题与脉络
+一句话脉络：以「长期复利」为核心，
+拆出输入、实践、反馈三个环节。
+
+## 核心观点
+1. 观点一……
+2. 观点二……
+
+## 行动项建议
+1. 本周内完成第一步……
+2. 建立固定复盘时间……</pre>
+        </div>
+        <div class="sample">
+          <div class="sample-tag">📑 Review / 2026-08-16-解析汇总.md</div>
+          <pre># 📑 2026-08-16 解析汇总
+## 今日处理碎片
+| # | 标题 | 类型 | 主主题 | 落盘 |
+|---|------|------|--------|------|
+| 1 | 示例标题 | 截图 | 个人成长 | 📥 + 📝 |
+| 2 | 示例标题 | 链接 | AI 副业 | 📥 + 📝 |</pre>
+        </div>
+      </div>
+      <p class="sample-note">⚠️ 以上内容均为脱敏示例，不代表真实笔记数据。</p>
+    </section>
+
+    <section id="demo" class="alt">
+      <h2>体验演示</h2>
+      <p class="lead">点击下方入口，体验「收到消息 → Agent 处理」的交互过程。</p>
+      <div class="demo-wrap">
+        <div class="presets" id="presets"></div>
+        <div class="chat" id="chat" aria-live="polite">
+          <div class="msg bot">你好，我是知识管家（演示模式）。点上方任一入口，看我是如何处理的。</div>
+        </div>
+      </div>
+      <p class="demo-note">纯前端脚本回放 · 无任何网络请求 · 不连接真实 Agent · 内容不会上传</p>
+    </section>
+
+    <section id="arch">
+      <h2>落地架构</h2>
+      <p class="lead">真实运行时的链路（本页只展示架构，不暴露任何凭证）。</p>
+      <div class="arch">
+        <div class="arch-node">飞书机器人</div>
+        <div class="arch-arrow">→</div>
+        <div class="arch-node">Hermes 运行时<br/><small>LLM 推理 + 工具调用 + 定时调度</small></div>
+        <div class="arch-arrow">→</div>
+        <div class="arch-node">Obsidian 本地知识库</div>
+      </div>
+      <p class="arch-note">本演示页与上述链路完全隔离，无法调用真实 Agent 或读取任何数据。</p>
+    </section>
+
+    <section id="faq">
+      <h2>注意事项 / FAQ</h2>
+      <div class="faq">
+        <details><summary>这个页面能调用真实 Agent 吗？</summary><p>不能。本页为纯静态前端，没有任何后端、接口或凭证，所有对话均为脚本回放。</p></details>
+        <details><summary>它的输入只能来自飞书吗？</summary><p>当前设计以飞书私聊为主要入口，支持文字、链接、截图、文件。</p></details>
+        <details><summary>什么情况需要人工介入？</summary><p>OCR / 解析失败且内容重要、主题无法唯一归类、转入常青笔记前校验、主题地图定稿前打磨。</p></details>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>知识管家 · 功能演示站</p>
+    <p class="footer-note">本页面为公开演示用途，不含任何真实数据、权限信息或 API 凭证。</p>
+  </footer>
+
+  <script src="assets/demo.js"></script>
+</body>
+</html>
